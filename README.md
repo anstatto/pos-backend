@@ -71,6 +71,7 @@ composer install
 ```bash
 cp .env.example .env
 php artisan key:generate
+
 ```
 
 4. Configurar la base de datos en .env:
@@ -83,8 +84,9 @@ DB_USERNAME=usuario
 DB_PASSWORD=contraseña
 ```
 
-5. Ejecutar migraciones y seeders:
+5. Ejecutar migraciones, Documentacion y seeders :
 ```bash
+php artisan l5-swagger:generate
 php artisan migrate --seed
 ```
 
