@@ -218,7 +218,20 @@ php artisan serve
 5. Abre un Pull Request
 
 ## 📄 Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia Propietaria de Angel Steven Tatis Torres - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+### Licencia Propietaria
+Este proyecto es de propiedad exclusiva de Angel Steven Tatis Torres. Todos los derechos reservados.
+
+Queda estrictamente prohibido, sin la autorización escrita de Angel Steven Tatis Torres:
+- La reproducción total o parcial de este software
+- La distribución de copias de este software
+- La modificación, fusión, publicación, sublicencia o venta de copias del software
+- El uso del software para fines comerciales sin autorización
+
+Para solicitar permisos o información adicional sobre el uso de este software, por favor contactar directamente al propietario.
+
+© 2024 Angel Steven Tatis Torres. Todos los derechos reservados.
 
 ## 💬 Soporte
 Para soporte y consultas, por favor crear un issue en el repositorio o contactar al equipo de desarrollo.
