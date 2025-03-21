@@ -173,7 +173,7 @@ class VentaController extends Controller
             $total = 0;
             foreach ($request->detalles as $detalle) {
                 $producto = \App\Models\Producto::findOrFail($detalle['producto_id']);
-                
+
                 // Calcular subtotal
                 $subtotal = $detalle['cantidad'] * $detalle['precio'];
                 $descuento = $detalle['descuento'] ?? 0;
@@ -272,6 +272,8 @@ class VentaController extends Controller
      */
     public function show($id)
     {
+        $venta = Venta::findOrFail($id);
+
         return response()->json([
             'status' => 'success',
             'data' => $venta->load([
@@ -319,7 +321,7 @@ class VentaController extends Controller
     {
         try {
             $venta = Venta::findOrFail($id);
-            
+
             if ($venta->estado === 'ANULADA') {
                 return response()->json(['message' => 'La venta ya está anulada'], 400);
             }
@@ -346,4 +348,4 @@ class VentaController extends Controller
             return response()->json(['message' => $e->getMessage()], 400);
         }
     }
-} 
+}
